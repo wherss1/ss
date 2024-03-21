@@ -1,6 +1,12 @@
 // @ts-ignore
 import { connect } from 'cloudflare:sockets';
 
+
+// 部署完成后在网址后面加上这个，获取订阅器默认节点，/auto
+
+let mytoken= 'auto';//快速订阅访问入口, 留空则不启动快速订阅
+
+
 // How to generate your own UUID:
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
