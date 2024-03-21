@@ -6,22 +6,6 @@ import { connect } from 'cloudflare:sockets';
 let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
 
 const proxyIPs = ['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'workers.bestip.one'];
-// 设置优选地址api接口
-
-let addressesapi = [
-	'https://9e1254dd.sstt-561.pages.dev/ip.txt?token=wherss' //可参考内容格式 自行搭建。
-
-let DLS = 4;//速度下限
-let addressescsv = [
-	'https://9e1254dd.sstt-561.pages.dev/result.csv?token=wherss' //iptest测速结果文件。
-
-let subconverter = "api.v1.mk"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
-let subconfig = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini.ini"; //订阅配置文件
-
-// 部署完成后在网址后面加上这个，获取订阅器默认节点，/auto
-
-let mytoken= 'auto';//快速订阅访问入口, 留空则不启动快速订阅
-
 
 // if you want to use ipv6 or single proxyIP, please add comment at this line and remove comment at the next line
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
@@ -30,6 +14,17 @@ let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 // ipv6 proxyIP example remove comment to use
 // let proxyIP = "[2a01:4f8:c2c:123f:64:5:6810:c55a]"
 
+let mytoken= 'auto';//快速订阅访问入口, 留空则不启动快速订阅
+
+let addressesapi = [
+	'https://9e1254dd.sstt-561.pages.dev/ip.txt?token=wherss'];
+
+let DLS = 4;//速度下限
+let addressescsv = [
+	'https://9e1254dd.sstt-561.pages.dev/result.csv?token=wherss'];
+
+let subconverter = "api.v1.mk"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
+let subconfig = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini.ini"; //订阅配置文件
 let dohURL = 'https://sky.rethinkdns.com/1:-Pf_____9_8A_AMAIgE8kMABVDDmKOHTAKg='; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
 
 if (!isValidUUID(userID)) {
