@@ -1,7 +1,6 @@
 // @ts-ignore
 import { connect } from 'cloudflare:sockets';
 
-
 // 部署完成后在网址后面加上这个，获取订阅器默认节点，/auto
 
 let mytoken= 'auto';//快速订阅访问入口, 留空则不启动快速订阅
