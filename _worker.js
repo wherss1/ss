@@ -12,11 +12,6 @@ let addressesapi = [
 	'https://9e1254dd.sstt-561.pages.dev/ip.txt?token=wherss' //可参考内容格式 自行搭建。
 ];
 
-// 部署完成后在网址后面加上这个，获取订阅器默认节点，/auto
-
-let mytoken= 'auto';//快速订阅访问入口, 留空则不启动快速订阅
-
-
 let DLS = 4;//速度下限
 let addressescsv = [
 	'https://9e1254dd.sstt-561.pages.dev/result.csv?token=wherss' //iptest测速结果文件。
