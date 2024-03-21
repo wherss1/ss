@@ -10,7 +10,6 @@ const proxyIPs = ['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'workers.b
 
 let addressesapi = [
 	'https://9e1254dd.sstt-561.pages.dev/ip.txt?token=wherss' //可参考内容格式 自行搭建。
-];
 
 let DLS = 4;//速度下限
 let addressescsv = [
@@ -18,6 +17,9 @@ let addressescsv = [
 
 let subconverter = "api.v1.mk"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
 let subconfig = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini.ini"; //订阅配置文件
+
+
+];
 
 
 
