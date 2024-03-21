@@ -17,8 +17,10 @@ let addressescsv = [
 
 let subconverter = "api.v1.mk"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
 let subconfig = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini.ini"; //订阅配置文件
-];
 
+// 部署完成后在网址后面加上这个，获取订阅器默认节点，/auto
+
+let mytoken= 'auto';//快速订阅访问入口, 留空则不启动快速订阅
 
 
 // if you want to use ipv6 or single proxyIP, please add comment at this line and remove comment at the next line
