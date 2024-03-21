@@ -7,10 +7,6 @@ let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
 
 const proxyIPs = ['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'workers.bestip.one'];
 // 设置优选地址api接口
-// 部署完成后在网址后面加上这个，获取订阅器默认节点，/auto
-
-let mytoken= 'auto';//快速订阅访问入口, 留空则不启动快速订阅
-
 
 let addressesapi = [
 	'https://9e1254dd.sstt-561.pages.dev/ip.txt?token=wherss' //可参考内容格式 自行搭建。
